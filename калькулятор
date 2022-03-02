@@ -1,0 +1,45 @@
+import math
+
+while True:
+choice = input(''' Please select the type of operation you want to perform:
++ для сложения
+- для вычитания
+* для умножения
+/ для деления
+^ для возведения в степень
+Год для вычисления возраста , в первой строке введите нынешний год , во второй год рождения
+Корень - для вычисления корня
+''')
+
+if choice == 'Год':
+n1 = int(input('Введите год на данный момент времени:'))
+n2 = int(input('Введите год рождения'))
+print('{} - {} = '.format(n1, n2))
+if choice == 'Корень':
+a = int(input("Введите число: "))
+print(int(math.sqrt(a)))
+else:
+num_1 = int(input('Enter your first number: '))
+num_2 = int(input('Enter your second number: '))
+if choice == '+':
+print('{} + {} = '.format(num_1, num_2))
+print(num_1 + num_2)
+elif choice == '-':
+print('{} - {} = '.format(num_1, num_2))
+print(num_1 - num_2)
+elif choice == '*':
+print('{} * {} = '.format(num_1, num_2))
+print(num_1 * num_2)
+elif choice == '/':
+print('{} / {} = '.format(num_1, num_2))
+print(num_1 / num_2)
+elif choice == '^':
+print('{} ** {} = '.format(num_1, num_2))
+elif choice == 'Год':
+print('{} - {} = ')
+else:
+print('Введите правильно операцию, please run the program again.')
+
+qw = input("Начать заново? ")
+if qw == 'нет':
+break

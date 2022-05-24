@@ -1,7 +1,7 @@
 import math
 
 while True:
-choice = input(''' Please select the type of operation you want to perform:
+choice = input(''' Пожалуйста выберите операцию:
 + для сложения
 - для вычитания
 * для умножения
@@ -38,8 +38,8 @@ print('{} ** {} = '.format(num_1, num_2))
 elif choice == 'Год':
 print('{} - {} = ')
 else:
-print('Введите правильно операцию, please run the program again.')
+print('Введите правильно операцию, запустите заного операцию.')
 
-qw = input("Начать заново? ")
-if qw == 'нет':
+quit = input("Начать заново? ")
+if quit == 'нет':
 break
